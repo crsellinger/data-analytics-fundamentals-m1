@@ -30,6 +30,7 @@ import statistics  # provides mean(), stdev() and more....
 # TODO: Add another or replace this with your own boolean variable
 has_international_clients: bool = True
 is_in_unitedstates: bool = True
+is_in_unitedstates = True
 
 # declare an integer variable 
 # TODO: Add or replace this with your own integer variable
@@ -63,16 +64,16 @@ stdev_score: float = statistics.stdev(client_turnaround_time)
 # TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
-Stellar Analytics: Delivering Professional Insights
+Jorq's Analytics: Delivering Professional Insights
 ---------------------------------------------------------
 Has International Clients:  {has_international_clients}
 Years in Operation:         {years_in_operation}
 Skills Offered:             {skills_offered}
-Client Satisfaction Scores: {client_satisfaction_scores}
-Minimum Satisfaction Score: {min_score}
-Maximum Satisfaction Score: {max_score}
-Mean Satisfaction Score: {mean_score:.2f}
-Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+Client Client Turnaround Times: {client_satisfaction_scores}
+Minimum Client Turnaround Time: {min_score}
+Maximum Client Turnaround Time: {max_score}
+Mean Client Turnaround Time: {mean_score:.2f}
+Standard Deviation of client turnaround time: {stdev_score:.2f}
 """
 
 #####################################
