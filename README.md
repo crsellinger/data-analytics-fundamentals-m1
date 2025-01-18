@@ -1,5 +1,9 @@
-# data-analytics-fundamentals-m1
+# Data-analytics-fundamentals-m1
 New repo for module 1, 44-608
+
+# datafun-01-utils
+Reusable utilities for my Python projects
+Test you Python code with [Python Online](https://www.online-python.com)
 
 ## Run Locally - Initial Start
 
