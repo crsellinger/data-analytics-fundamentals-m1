@@ -20,7 +20,7 @@ TODO: Change the author in this opening docstring
 # Import helpful modules from the Python Standard library
 # See more at: https://docs.python.org/3/library/
 
-import statistics  # provides mean(), stdev() and more....
+import statistics   # provides mean(), stdev() and more....
 
 #####################################
 # Declare Global Variables
@@ -45,19 +45,23 @@ average_num_clients: float = 3.42
 # declare a list of strings
 # TODO: Add or replace this with your own list  
 skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
-clients: list = ["Client 1", "Client 2", "Client 3"]
+clients: list = ["Client 1", "Client 2", "Client 3","Client 4"]
 
 # declare a list of numbers so we can illustrate statistics skills
 # TODO: Add or replace this with your own numeric list  
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
-client_turnaround_time: list = [431, 324, 874] # in days
+client_turnaround_time: list = [431, 324, 874, 512] # in days
 
 # Calculate basic statistics using built-in Python functions and the statistics module
 # TODO: Replace these variable names with the variable name of your own numeric list
-min_score: float = min(client_turnaround_time)  
-max_score: float = max(client_turnaround_time)  
-mean_score: float = statistics.mean(client_turnaround_time)  
+min_turnaround: float = min(client_turnaround_time)  
+max_turnaround: float = max(client_turnaround_time)  
+mean_turnaround: float = statistics.mean(client_turnaround_time)  
 stdev_score: float = statistics.stdev(client_turnaround_time)
+
+# Accidentally updated vars in iter4. Adding an additional stat for median high and low below
+median_high: float = statistics.median_high(client_turnaround_time)
+median_low: float = statistics.median_low(client_turnaround_time)
 
 # Use a Python formatted string (f-string) to show information
 # TODO: Modify the text in the byline to fit your information
@@ -70,10 +74,12 @@ Has International Clients:  {has_international_clients}
 Years in Operation:         {years_in_operation}
 Skills Offered:             {skills_offered}
 Client Client Turnaround Times: {client_satisfaction_scores}
-Minimum Client Turnaround Time: {min_score}
-Maximum Client Turnaround Time: {max_score}
-Mean Client Turnaround Time: {mean_score:.2f}
+Minimum Client Turnaround Time: {min_turnaround}
+Maximum Client Turnaround Time: {max_turnaround}
+Mean Client Turnaround Time: {mean_turnaround:.2f}
 Standard Deviation of client turnaround time: {stdev_score:.2f}
+Median High Client Turnaround Time: {median_high}
+Median Low Client Turnaround Time: {median_low}
 """
 
 #####################################
