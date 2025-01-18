@@ -60,6 +60,7 @@ mean_turnaround: float = statistics.mean(client_turnaround_time)
 stdev_score: float = statistics.stdev(client_turnaround_time)
 
 # Accidentally updated vars in iter4. Adding an additional stat for median high and low below
+# Comment for iter5
 median_high: float = statistics.median_high(client_turnaround_time)
 median_low: float = statistics.median_low(client_turnaround_time)
 
