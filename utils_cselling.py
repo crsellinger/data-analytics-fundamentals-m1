@@ -3,15 +3,16 @@ Module: utils_cselling
 
 Purpose: Reusable Module for My Analytics Projects
 
-Description: This module provides a byline for my analytics projects. 
-When we work hard to write useful code, we want it to be reusable.
-A good byline could be used in every Python analytics project we do.
+Description: This module provides a byline for Module P1. 
+This program calculates several statistic functions for client turnaround time.
+YIPPEEEEE!!!!!
 
 Author: Caleb Sellinger
 
 TODO: Change the module name in this opening docstring
 TODO: Change the author in this opening docstring
 """
+# Updated description and byline for Final Iteration
 
 #####################################
 # Import Modules
@@ -71,9 +72,9 @@ byline: str = f"""
 ---------------------------------------------------------
 Jorq's Analytics: Delivering Professional Insights
 ---------------------------------------------------------
-Has International Clients:  {has_international_clients}
-Years in Operation:         {years_in_operation}
-Skills Offered:             {skills_offered}
+Has International Clients:  {is_in_unitedstates}
+Years in Operation:         {number_of_clients}
+Skills Offered:             {clients}
 Client Client Turnaround Times: {client_satisfaction_scores}
 Minimum Client Turnaround Time: {min_turnaround}
 Maximum Client Turnaround Time: {max_turnaround}
